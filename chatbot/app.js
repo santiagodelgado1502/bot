@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const mongoose=require('mongoose');
 const Messagingresponse = require('twilio').twiml.MessagingResponse;
 const { ConnectionPolicyPage } = require('twilio/lib/rest/voice/v1/connectionPolicy');
-const {MONGO_URI} = require('./config');
+const {MONGO_URI} = require('./config/index');
 const Usuario = require('./models/usuario.models');
 
 mongoose.connect( MONGO_URI, { useNewUrlParser:true, useUnifiedTopology:true } );
@@ -38,7 +38,7 @@ app.get('/',(req,res)=>{
       console.log(error);
   }
 
-})();*/
+})();
 /*
 client.messages
   .create({
@@ -203,7 +203,7 @@ client.messages
         
       }
 
-      /*
+      
       switch(arreglo[1]) {
         case '1':
           const twiml = new Messagingresponse();
@@ -234,8 +234,8 @@ client.messages
           res.end(twiml3.toString());
           break;
         default:
-          // code block
-      }*/
+          
+      }
       
           
       
