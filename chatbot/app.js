@@ -24,29 +24,6 @@ app.get('/',(req,res)=>{
   res.send('Hola mundo');
 });
 
-/*(async ()=>{
-  try{
-      
-      //await usuario1.save();
-      //console.log('El usuario fue creado sin problema');
-      await Usuario.find({cedula:'1304327974'}).then(console.log)
-      console.log('Se mostro la informacion');
-  
-  }
-  catch (error) {
-
-      console.log(error);
-  }
-
-})();
-/*
-client.messages
-  .create({
-     from: 'whatsapp:+14155238886',
-     body: 'Prueba Mensaje bot',
-     to: 'whatsapp:+593982207610'
-   })
-  .then(message => console.log(message.body));*/
   var arreglo = new Array();
   var arrfecha=new Array();
   let contador=0;
